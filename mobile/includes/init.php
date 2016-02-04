@@ -193,10 +193,11 @@ if (gzip_enabled())
 //{}
 header("Content-Type:text/html; charset=utf-8");
 
-if (empty($_CFG['wap_config']))
-{
-    echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><title>ECShop_mobile</title></head><body><p align='left'>对不起,{$_CFG['shop_name']}暂时没有开启手机购物功能</p></body></html>";
-    exit();
-}
+// modified for in store by yugtibtusj to support mobile devices.
+// if (empty($_CFG['wap_config']))
+// {
+//     echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><title>ECShop_mobile</title></head><body><p align='left'>对不起,{$_CFG['shop_name']}暂时没有开启手机购物功能</p></body></html>";
+//     exit();
+// }
 
 ?>

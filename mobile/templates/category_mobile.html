@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ECShop_mobile</title>
+</head>
+
+<body>
+{foreach from=$goods_data item=goods}
+    <!-- {$goods.i}.<a href='goods.php?id={$goods.id}'>{$goods.name}</a>[{$goods.price}]<br/> -->
+    <a href="../{$goods.img}"><img src="{$goods.thumb}" alt="{$goods.thumb}" class="goodsimg" style="float:left;" /></a>
+{foreachelse}
+{/foreach}<br/>
+</body>
+</html>
