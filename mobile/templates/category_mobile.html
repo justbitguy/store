@@ -10,7 +10,7 @@
 <ul style="list-style-type:none">
 {foreach from=$goods_data item=goods}
     <!-- {$goods.i}.<a href='goods.php?id={$goods.id}'>{$goods.name}</a>[{$goods.price}]<br/> -->
-    <li style="float:left; width:30%; height:30%; padding-top:15%; padding-left:2.5%;">
+    <li style="float:left; max-width:40%; max-height:40%; padding-top:10%; padding-left:5%;">
 	<a href="goods.php?id={$goods.id}">
 		<img src="./../{$goods.img}" alt="{$goods.thumb}" class="goodsimg"/>
 	</a>
