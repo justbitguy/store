@@ -75,7 +75,8 @@ $smarty->assign('specification',       $properties['spe']);  // 商品规格
 
 $comment = assign_comment($goods_id, 0);
 $smarty->assign('comment', $comment);
-$smarty->display('goods.html');
+// $smarty->display('goods.html');
+$smarty->display('goods_mobile.html');
 
 /**
  * 获得指定商品的各会员等级对应的价格
