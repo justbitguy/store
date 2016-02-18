@@ -2,22 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title>ECShop_mobile</title>
 </head>
 
 <body>
 <div>
-<ul style="list-style-type:none">
+<!-- <ul style="list-style-type:none"> -->
 {foreach from=$goods_data item=goods}
-    <!-- {$goods.i}.<a href='goods.php?id={$goods.id}'>{$goods.name}</a>[{$goods.price}]<br/> -->
-    <li style="float:left; max-width:40%; max-height:40%; padding-top:10%; padding-left:5%;">
+    <!-- <li style="float:left; max-width:100%; max-height:100%; padding-top:10%; padding-left:5%;"> -->
 	<a href="goods.php?id={$goods.id}">
-		<img src="./../{$goods.img}" alt="{$goods.thumb}" class="goodsimg"/>
+		<img style="max-width:33%; max-height:33%; width:33%;" src="./../{$goods.img}" alt="{$goods.thumb}" class="goodsimg"/>
 	</a>
-    </li>
+    <!-- </li> -->
 {foreachelse}
 {/foreach}
-</ul>
+<!-- </ul> -->
 </div>
 </body>
 </html>
