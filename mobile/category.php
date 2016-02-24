@@ -63,7 +63,7 @@ else
     $num = count($cat_goods['goods']);
     if ($num > 0)
     {
-        $page_num = '10';
+        $page_num = '12';
         $page = !empty($_GET['page']) ? intval($_GET['page']) : 1;
         $pages = ceil($num / $page_num);
         if ($page <= 0)
