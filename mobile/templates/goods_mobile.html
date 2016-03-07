@@ -8,8 +8,26 @@
 
 <body>
 <p align='center'>
-
+  <!-- 物品大图 -->
   <img src="./../{$goods_info.original_img}" style="max-width: 100%; max-height: 80%;"/> <br/>
+  <!-- 物品相册 -->
+  {if $pictures}
+  <div class="gallery">
+    <div id="demo">
+      <div id="demo1" align="center">
+       
+        {foreach from=$pictures item=picture}
+			<a href="./../{$picture.img_url}">
+			<img style="max-width:24%; " 
+				 src="{if $picture.thumb_url}./../{$picture.thumb_url}{else}./../{$picture.img_url}{/if}" 
+				 alt="{$goods.goods_name}" class="B_blue" />
+			</a>
+        {/foreach}
+      </div>
+      
+    </div>
+  </div>
+{/if}
 
 </p>
 <p align='center'>

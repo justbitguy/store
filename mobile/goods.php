@@ -75,6 +75,11 @@ $smarty->assign('specification',       $properties['spe']);  // 商品规格
 
 $comment = assign_comment($goods_id, 0);
 $smarty->assign('comment', $comment);
+
+// For in-store 
+// 增加商品相册
+$smarty->assign('pictures', get_goods_gallery($goods_id));                    // 商品相册
+
 // $smarty->display('goods.html');
 $smarty->display('goods_mobile.html');
 
