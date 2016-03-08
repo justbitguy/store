@@ -1,0 +1,117 @@
+<html lang="zh-cn"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>oneone</title>
+    <link rel="stylesheet" href="/Public/css/amazeui/amazeui.min.css">
+    <link rel="stylesheet" href="/Public/css/main.css?20150505">
+    <style>
+
+        body{
+            padding:1rem;
+        }
+        #order_container img{
+            width:8rem;
+            height:8rem;
+        }
+
+        #order_container .img_container{
+            width:10rem;
+        }
+        .line-clamp {
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        .top_circle{
+            margin-bottom: -1px;
+            height: 6rem;
+            z-index: 9999;
+            position: relative;
+            text-align: center;
+            vertical-align: bottom;
+            font-size: 3rem;
+            color: #e62f17;
+        }
+        .top_circle img{
+            position: relative;
+            height: 6rem;
+        }
+        .top_circle h3{
+            margin: 0;
+            position: absolute;
+            width: 100%;
+            top: 1.5rem;
+            font-weight: normal;
+            font-size:2.5rem;
+        }
+        .pre{
+            display: block;
+            padding: 0.5rem;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            word-break: break-all;
+            word-wrap: break-word;
+            color: #555;
+            background-color: #f8f8f8;
+            border: 1px solid #dedede;
+            border-radius: 0;
+            height: 8rem;
+            margin: 0;
+        }
+
+        #showMore{
+            padding-right: 1rem;
+            text-align: right;
+            padding-bottom: 1rem;
+            color: #929292;
+        }
+        #showMore a{color:#929292}
+        #showLess{
+            text-align: center;
+            padding-bottom: 1rem;
+
+        }
+        .order_container td{
+            padding:1rem;
+        }
+        .fee{
+            color:#af1400;
+            font-weight:bold;
+        }
+        .address{
+            color:#797979;
+        }
+
+
+    </style>
+</head>
+<body style="padding-top: 5rem;">
+<div class="top_circle">
+    <h3 style="margin: 0;position: absolute;width: 100%;top: 1.5rem;font-weight: normal;font-size: 2.2rem;line-height: 2.5rem;">长按二维码</h3>
+    <h5 style="margin: 0;color: #999;position: absolute;font-size: 1.5rem;width: 100%;font-weight: normal;top: 4rem;">咨询店主</h5>
+</div>
+<div class="am-panel am-panel-default" style="padding:1rem;margin-left:10%;margin-right:10%;text-align: center;">
+
+    <img src="./../Images/weixin_intro.jpg" style="width:100%">
+
+
+</div>
+<div style="padding:8%;padding-bottom: 2rem;">
+</div>
+
+<script src="/Public/static/jquery-1.10.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    function displayIntro(){
+       window.location = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.nut.oneone';
+    }
+
+</script>
+</body></html>
