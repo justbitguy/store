@@ -59,6 +59,9 @@ else
         $order_rule = 'ORDER BY g.shop_price DESC, g.sort_order';
     }
 
+    // FOR in-store
+    $order_rule = 'ORDER BY g.add_time DESC, g.sort_order';
+
     $cat_goods = assign_cat_goods($c_id, 0, 'wap', $order_rule);
     $num = count($cat_goods['goods']);
     if ($num > 0)
